@@ -1,0 +1,43 @@
+.bg-image {
+  background-image: url("img/first-img.png");
+  background-size: 100% 100%; /* could be "cover" value of property too */
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 12% 5%;
+  color: white;
+  position: relative;
+  border-radius: 40px;
+  text-align: left;
+}
+
+.bg-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  z-index: 1;
+}
+
+.headings-container {
+  max-width: 70%;
+}
+
+h1 {
+  font-size: 4.375em;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 span {
+  color: #ff6600;
+}
+
+.headings-container h2 {
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
