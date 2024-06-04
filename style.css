@@ -1,0 +1,138 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Nav bar */
+
+.navbar {
+  font-size: 15px;
+  color: #333333;
+  padding: 0;
+}
+
+.logo-nav {
+  max-width: 250px;
+}
+
+.container-fluid {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.nav-link-custom:hover {
+  color: #ff6600;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.orange-button-navbar {
+  background-color: #ff6600;
+  border-radius: 40px;
+  padding: 6px 12px;
+}
+.orange-button-navbar .nav-link {
+  color: white;
+  font-weight: 500;
+}
+.orange-button-navbar .nav-link:hover {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+}
+
+/* First section - background image and headings */
+
+.bg-image {
+  background-image: url("img/first-img.png");
+  background-size: 100% 100%; /* could be "cover" value of property too */
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 12% 5%;
+  color: white;
+  position: relative;
+  border-radius: 40px;
+  text-align: left;
+}
+
+.bg-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  z-index: 1;
+}
+
+.headings-container {
+  max-width: 70%;
+}
+
+h1 {
+  font-size: 4.375em;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 span {
+  color: #ff6600;
+}
+
+.headings-container h2 {
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+/* Second section */
+
+.section-two-text-container h2 {
+  font-size: 40px;
+  color: #000000;
+}
+.section-two-text-container p {
+  font-size: 18px;
+  color: #000000;
+}
+.section-two-text-container button {
+  display: inline-block;
+  padding: 8px;
+  font-size: 18px;
+  color: #ffffff; /* zasto se color i background ne prihvataju */
+  background-color: #ff6600;
+  border-radius: 40px;
+}
+
+.image-container {
+  padding: 0;
+  overflow: hidden;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.panels-img {
+  border-radius: 40px;
+}
+
+/* Carousel */
