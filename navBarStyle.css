@@ -31,10 +31,18 @@ body {
   justify-content: center;
   margin: 0 10px;
 }
-.nav-link-custom:hover {
+
+.nav-item-custom .nav-link {
+  font-weight: 500;
+  color: #333333;
+  transition: color 0.2s, font-weight 0.2s;
+}
+.nav-item-custom .nav-link:hover,
+.nav-item-custom .nav-link:active {
   color: #ff6600;
   font-weight: 600;
   text-decoration: underline;
+  transform: scale(1.2);
 }
 
 .orange-button-navbar {
@@ -45,10 +53,12 @@ body {
 .orange-button-navbar .nav-link {
   color: white;
   font-weight: 500;
+  transition: font-weight 0.2s;
 }
 .orange-button-navbar .nav-link:hover {
   font-weight: 600;
   text-decoration: none;
+  transform: scale(1);
 }
 
 .nav-link {
