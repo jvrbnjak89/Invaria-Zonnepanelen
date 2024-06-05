@@ -8,8 +8,9 @@
 }
 .button-section-2 {
   display: block;
-  margin: 0 auto;
+  margin: 0;
   align-items: center;
+  align-self: flex-start;
   background-color: #ff6600;
   border: 1px solid transparent;
   border-radius: 40px;
