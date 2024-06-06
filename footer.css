@@ -14,10 +14,6 @@
   padding: 50px;
 }
 
-.footer-logo {
-  width: 100px;
-}
-
 .footer a {
   text-decoration: none;
   color: #888888;
@@ -44,4 +40,14 @@
 .footer h5 {
   font-size: 18px;
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .footer-div {
+    gap: 10px;
+  }
+
+  .footer .col-lg-3 {
+    padding: 10px;
+  }
 }

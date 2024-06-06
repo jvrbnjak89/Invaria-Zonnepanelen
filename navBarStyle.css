@@ -40,7 +40,6 @@ body {
 .nav-item-custom .nav-link:hover,
 .nav-item-custom .nav-link:active {
   color: #ff6600;
-  font-weight: 600;
   text-decoration: underline;
   transform: scale(1.2);
 }
@@ -49,14 +48,19 @@ body {
   background-color: #ff6600;
   border-radius: 40px;
   padding: 6px 12px;
+  transition: background-color 0.2;
+}
+.orange-button-navbar:hover {
+  background-color: #cc5200;
 }
 .orange-button-navbar .nav-link {
   color: white;
   font-weight: 500;
-  transition: font-weight 0.2s;
+  transition: background-color 0.2;
 }
 .orange-button-navbar .nav-link:hover {
-  font-weight: 600;
+  background-color: #cc5200;
+  color: #e6e6e6;
   text-decoration: none;
   transform: scale(1);
 }
