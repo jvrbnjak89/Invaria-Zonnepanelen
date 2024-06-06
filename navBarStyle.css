@@ -15,8 +15,8 @@ body {
 }
 
 .container-fluid {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .navbar-nav {
@@ -41,7 +41,7 @@ body {
 .nav-item-custom .nav-link:active {
   color: #ff6600;
   text-decoration: underline;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .orange-button-navbar {
@@ -57,12 +57,14 @@ body {
   color: white;
   font-weight: 500;
   transition: background-color 0.2;
+  white-space: nowrap;
+  padding: 0 12px;
 }
 .orange-button-navbar .nav-link:hover {
   background-color: #cc5200;
   color: #e6e6e6;
   text-decoration: none;
-  transform: scale(1);
+  transform: scale(1.1);
 }
 
 .nav-link {
