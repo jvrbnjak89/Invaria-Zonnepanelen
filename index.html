@@ -22,8 +22,13 @@
     <link rel="stylesheet" href="firstSectionStyle.css" />
     <link rel="stylesheet" href="secondSectionStyle.css" />
     <link rel="stylesheet" href="carouselImages.css" />
-    <link rel="stylesheet" href="commentsSection.css">
+    <link rel="stylesheet" href="commentsSection.css" />
     <link rel="stylesheet" href="footer.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg nav-bar-light bg-light px-3 px-md-5">
@@ -59,9 +64,7 @@
               <a href="#" class="nav-link">Contact</a>
             </li>
             <li class="nav-item orange-button-navbar">
-              <a href="#" class="nav-link"
-                >VRAAG EEN OFFERTE AAN</a
-              >
+              <a href="#" class="nav-link">VRAAG EEN OFFERTE AAN</a>
             </li>
           </ul>
         </div>
@@ -123,71 +126,66 @@
 
     <!-- Carousel section -->
     <div class="container mt-5">
-      <h2 class="carousel-title text-center mb-3">Onze projecten</h2>
-      <div
-        class="carousel slide"
-        id="carouselDemo"
-        data-bs-wrap="true"
-        data-bs-ride="carousel"
-      >
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="carousel-title">Onze projecten</h2>
+        <div>
+          <button
+            class="carousel-control-prev-custom"
+            type="button"
+            data-bs-target="#carouselDemo"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button
+            class="carousel-control-next-custom"
+            type="button"
+            data-bs-target="#carouselDemo"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+
+      <div id="carouselDemo" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./img/carousel-img-1.png" class="w-100" />
-            <div class="carousel-caption">
-              <h5>Title Slide 0</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
-                nemo?
-              </p>
+            <div class="img-wrapper">
+              <img
+                src="./img/carousel-img-1.png"
+                class="d-block w-100 carousel-img"
+                alt="..."
+              />
             </div>
           </div>
-
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="./img/carousel-img-2.png" class="w-100" />
-            <div class="carousel-caption">
-              <h5>Title Slide 1</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
-                nemo?
-              </p>
-            </div>
-          </div>
-
           <div class="carousel-item">
-            <img src="./img/carousel-img-3.png" class="w-100" />
-            <div class="carousel-caption">
-              <h5>Title Slide 2</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
-                nemo?
-              </p>
+            <div class="img-wrapper">
+              <img
+                src="./img/carousel-img-2.png"
+                class="d-block w-100 carousel-img"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="img-wrapper">
+              <img
+                src="./img/carousel-img-3.png"
+                class="d-block w-100 carousel-img"
+                alt="..."
+              />
             </div>
           </div>
         </div>
 
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselDemo"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon"></span>
+        <button class="btn btn-primary carousel-btn mt-3">
+          BEKIJK MEER PROJECTEN
         </button>
-
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselDemo"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon"></span>
-        </button>
-
-      <button class="btn btn-primary carousel-btn mt-3">
-        BEKIJK MEER PROJECTEN
-      </button>
+      </div>
     </div>
-    
+
     <!-- Testimonials section -->
     <section class="testimonial-section">
       <div class="container">
@@ -197,13 +195,17 @@
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card testimonial-card h-100">
               <div class="card-body">
-                <p class="card-text">Wij werken uitsluitend met de beste materialen en zorgen voor de echte service die hoort bij een systeem. Wij leveren enkel maatwerk en komen elke situatie, vooraf montage, bekijken en bespreken de mogelijkheden in een persoonlijk gesprek.</p>
+                <p class="card-text">
+                  Wij werken uitsluitend met de beste materialen en zorgen voor
+                  de echte service die hoort bij een systeem. Wij leveren enkel
+                  maatwerk en komen elke situatie, vooraf montage, bekijken en
+                  bespreken de mogelijkheden in een persoonlijk gesprek.
+                </p>
                 <div class="testimonial-stars">
-                  &#9733; &#9733; &#9733; &#9733; &#9734; <!-- 4 stars -->
+                  &#9733; &#9733; &#9733; &#9733; &#9734;
+                  <!-- 4 stars -->
                 </div>
-                <div class="testimonial-author mt-2">
-                  Piet Janssen
-                </div>
+                <div class="testimonial-author mt-2">Piet Janssen</div>
               </div>
             </div>
           </div>
@@ -211,13 +213,16 @@
           <div class="col-lg-4 col-md-6 mt-2">
             <div class="card testimonial-card h-100">
               <div class="card-body">
-                <p class="card-text">De Nederlandse zon is prima geschikt om energie op te wekken, schijnt het hele jaar door, gaat voor niets op en levert 100% groene energie.</p>
+                <p class="card-text">
+                  De Nederlandse zon is prima geschikt om energie op te wekken,
+                  schijnt het hele jaar door, gaat voor niets op en levert 100%
+                  groene energie.
+                </p>
                 <div class="testimonial-stars">
-                  &#9733; &#9733; &#9733; &#9733; &#9733; <!-- 5 stars -->
+                  &#9733; &#9733; &#9733; &#9733; &#9733;
+                  <!-- 5 stars -->
                 </div>
-                <div class="testimonial-author mt-2">
-                  Klaas Fritsen
-                </div>
+                <div class="testimonial-author mt-2">Klaas Fritsen</div>
               </div>
             </div>
           </div>
@@ -225,13 +230,17 @@
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card testimonial-card h-100">
               <div class="card-body">
-                <p class="card-text">Wij werken uitsluitend met de beste materialen en zorgen voor de echte service die hoort bij een systeem. Wij leveren enkel maatwerk en komen elke situatie, vooraf montage, bekijken en bespreken de mogelijkheden in een persoonlijk gesprek.</p>
+                <p class="card-text">
+                  Wij werken uitsluitend met de beste materialen en zorgen voor
+                  de echte service die hoort bij een systeem. Wij leveren enkel
+                  maatwerk en komen elke situatie, vooraf montage, bekijken en
+                  bespreken de mogelijkheden in een persoonlijk gesprek.
+                </p>
                 <div class="testimonial-stars">
-                  &#9733; &#9733; &#9733; &#9733; &#9734; <!-- 4 stars -->
+                  &#9733; &#9733; &#9733; &#9733; &#9734;
+                  <!-- 4 stars -->
                 </div>
-                <div class="testimonial-author mt-2">
-                  Jan Test
-                </div>
+                <div class="testimonial-author mt-2">Jan Test</div>
               </div>
             </div>
           </div>
@@ -281,18 +290,19 @@
                 </li>
                 <li class="mb-1 mb-md-4">
                   <a href="#!" class="text-decoration-none"
-                    ><i class="fas fa-info fa-fw fa-sm me-2"></i>Over
-                    ons</a
+                    ><i class="fas fa-info fa-fw fa-sm me-2"></i>Over ons</a
                   >
                 </li>
                 <li class="mb-1 mb-md-4">
                   <a href="#!" class="text-decoration-none"
-                    ><i class="fas fa-solar-panel fa-fw fa-sm me-2"></i>Zonnepanelen</a
+                    ><i class="fas fa-solar-panel fa-fw fa-sm me-2"></i
+                    >Zonnepanelen</a
                   >
                 </li>
                 <li class="mb-1 mb-md-4">
                   <a href="#!" class="text-decoration-none"
-                    ><i class="fas fa-project-diagram fa-fw fa-sm me-2"></i>Projecten</a
+                    ><i class="fas fa-project-diagram fa-fw fa-sm me-2"></i
+                    >Projecten</a
                   >
                 </li>
                 <li class="mb-1 mb-md-4">
@@ -310,10 +320,16 @@
 
               <ul class="list-unstyled text-left">
                 <li class="mb-1 mb-md-4">
-                  <a href="#" class="text-decoration-none"><i class="fas fa-envelope fa-fw fa-sm me-2"></i>E-mail: info@invaria.nl</a>
+                  <a href="#" class="text-decoration-none"
+                    ><i class="fas fa-envelope fa-fw fa-sm me-2"></i>E-mail:
+                    info@invaria.nl</a
+                  >
                 </li>
                 <li class="mb-1 mb-md-4">
-                  <a href="#" class="text-decoration-none"><i class="fas fa-phone fa-fw fa-sm me-2"></i>Telefoon: 06 - 19 99 93 56</a>
+                  <a href="#" class="text-decoration-none"
+                    ><i class="fas fa-phone fa-fw fa-sm me-2"></i>Telefoon: 06 -
+                    19 99 93 56</a
+                  >
                 </li>
               </ul>
             </div>
@@ -326,12 +342,14 @@
               <ul class="list-unstyled">
                 <li class="mb-1 mb-md-4">
                   <a href="#" class="text-decoration-none"
-                    ><i class="fab fa-facebook-f fa-fw fa-sm me-2"></i>Facebook</a
+                    ><i class="fab fa-facebook-f fa-fw fa-sm me-2"></i
+                    >Facebook</a
                   >
                 </li>
                 <li class="mb-1 mb-md-4">
                   <a href="#" class="text-decoration-none"
-                    ><i class="fab fa-instagram fa-fw fa-sm me-2"></i>Instagram</a
+                    ><i class="fab fa-instagram fa-fw fa-sm me-2"></i
+                    >Instagram</a
                   >
                 </li>
               </ul>
