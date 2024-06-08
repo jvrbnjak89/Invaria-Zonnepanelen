@@ -36,18 +36,12 @@
 
 .button-section-2:hover,
 .button-section-2:focus {
-  background-color: #fb8332;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-}
-
-.button-section-2:hover {
-  transform: translateY(-1px);
+  background-color: #cc5200;
+  color: #e6e6e6;
 }
 
 .button-section-2:active {
-  background-color: #c85000;
-  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-  transform: translateY(0);
+  background-color: #cc5200;
 }
 
 .image-container {

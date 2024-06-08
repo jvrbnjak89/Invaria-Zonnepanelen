@@ -29,18 +29,12 @@
 }
 .carousel-btn:hover,
 .carousel-btn:focus {
-  background-color: #fb8332;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-}
-
-.carousel-btn:hover {
-  transform: translateY(-1px);
+  background-color: #cc5200;
+  color: #e6e6e6;
 }
 
 .carousel-btn:active {
-  background-color: #c85000;
-  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-  transform: translateY(0);
+  background-color: #cc5200;
 }
 
 .carousel-control-prev-custom,

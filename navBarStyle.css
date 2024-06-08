@@ -35,36 +35,38 @@ body {
 .nav-item-custom .nav-link {
   font-weight: 500;
   color: #333333;
-  transition: color 0.2s, font-weight 0.2s;
-}
-.nav-item-custom .nav-link:hover,
-.nav-item-custom .nav-link:active {
-  color: #ff6600;
-  text-decoration: underline;
-  transform: scale(1.1);
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s;
 }
 
-.orange-button-navbar {
+.nav-item-custom .nav-link.active {
+  color: #ff6600;
+  text-decoration: underline;
+}
+
+.nav-item-custom .nav-link:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+
+.nav-item-custom .nav-link:hover ~ .nav-item-custom .nav-link.active {
+  color: #333333;
+  text-decoration: none;
+}
+
+.orange-button-navbar .nav-link {
   background-color: #ff6600;
   border-radius: 40px;
-  padding: 6px 12px;
-  transition: background-color 0.2;
+  padding: 12px 20px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
 }
-.orange-button-navbar:hover {
-  background-color: #cc5200;
-}
-.orange-button-navbar .nav-link {
-  color: white;
-  font-weight: 500;
-  transition: background-color 0.2;
-  white-space: nowrap;
-  padding: 0 12px;
-}
+
 .orange-button-navbar .nav-link:hover {
   background-color: #cc5200;
   color: #e6e6e6;
-  text-decoration: none;
-  transform: scale(1.1);
 }
 
 .nav-link {
