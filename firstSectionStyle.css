@@ -1,6 +1,6 @@
 .bg-image {
   background-image: url("img/first-img.png");
-  background-size: 100% 100%; /* could be "cover" value of property too */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 12% 5%;
@@ -24,6 +24,8 @@
 
 .headings-container {
   max-width: 70%;
+  z-index: 2;
+  position: relative;
 }
 
 h1 {
@@ -40,4 +42,66 @@ h1 span {
   font-size: 2.5em;
   margin-bottom: 1rem;
   line-height: 1.2;
+}
+
+@media (max-width: 1200px) {
+  .headings-container {
+    max-width: 80%;
+  }
+
+  h1 {
+    font-size: 3.5em;
+  }
+
+  .headings-container h2 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 992px) {
+  .headings-container {
+    max-width: 80%;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  .headings-container h2 {
+    font-size: 1.75em;
+  }
+}
+
+@media (max-width: 768px) {
+  .headings-container {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .headings-container h2 {
+    font-size: 1.5em;
+  }
+
+  .bg-image {
+    padding: 10% 3%;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .headings-container h2 {
+    font-size: 1.25em;
+  }
+
+  .bg-image {
+    padding: 8% 2%;
+    border-radius: 15px;
+  }
 }

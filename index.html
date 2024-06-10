@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>INVARIA ZONNEPANELEN</title>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
@@ -18,18 +22,22 @@
     <link rel="stylesheet" href="firstSectionStyle.css" />
     <link rel="stylesheet" href="secondSectionStyle.css" />
     <link rel="stylesheet" href="carouselImages.css" />
-    <link rel="stylesheet" href="commentsSection.css">
+    <link rel="stylesheet" href="testimonialsSection.css" />
     <link rel="stylesheet" href="footer.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg nav-bar-light bg-light px-5">
+    <nav class="navbar navbar-expand-lg nav-bar-light bg-light px-3 px-md-5">
       <div class="container-fluid">
         <a href="#" class="navbar-brand"
           ><img
             class="logo-nav"
             src="./img/invariaLogo.svg"
             alt="Invaria Zonnepanelen Logo"
-            srcset=""
         /></a>
 
         <button
@@ -44,21 +52,19 @@
         <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item nav-item-custom">
-              <a href="#home" class="nav-link">Home</a>
+              <a href="#" class="nav-link active">Home</a>
             </li>
             <li class="nav-item nav-item-custom">
-              <a href="#over-ons" class="nav-link">Over ons</a>
+              <a href="#" class="nav-link">Over ons</a>
             </li>
             <li class="nav-item nav-item-custom">
-              <a href="#zonnepanelen" class="nav-link">Zonnepanelen</a>
+              <a href="#" class="nav-link">Zonnepanelen</a>
             </li>
             <li class="nav-item nav-item-custom">
-              <a href="#contact" class="nav-link">Contact</a>
+              <a href="#" class="nav-link">Contact</a>
             </li>
             <li class="nav-item orange-button-navbar">
-              <a href="#vraag-een-offerte-aan" class="nav-link"
-                >VRAAG EEN OFFERTE AAN</a
-              >
+              <a href="#" class="nav-link">VRAAG EEN OFFERTE AAN</a>
             </li>
           </ul>
         </div>
@@ -66,11 +72,15 @@
     </nav>
 
     <!-- First background picture with headings -->
-    <section class="bg-light text-light mx-2 mt-2 text-center">
+    <section class="bg-light text-light py-4 text-center">
       <div class="container d-sm-flex bg-image text-left">
-        <div class="headings-container">
-          <h2>WELKOM BIJ INVARIA</h2>
-          <h1>Installatie en levering van <span>zonnepanelen</span></h1>
+        <div class="row">
+          <div class="col-12">
+            <div class="headings-container">
+              <h2>WELKOM BIJ INVARIA</h2>
+              <h1>Installatie en levering van <span>zonnepanelen</span></h1>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -99,9 +109,7 @@
               <br /><br />
               Het team van InVaria
             </p>
-            <button class="btn btn-primary button-section-2">
-              NEEM CONTACT OP
-            </button>
+            <button class="btn button-section-2">NEEM CONTACT OP</button>
           </div>
         </div>
         <div class="col-md-7 ml-3 image-container">
@@ -115,74 +123,123 @@
     </section>
 
     <!-- Carousel section -->
-    <div class="container mt-5">
-      <h2 class="carousel-title text-center mb-3">Onze projecten</h2>
-      <div
-        class="carousel slide"
-        id="carouselDemo"
-        data-bs-wrap="true"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/carousel-img-1.png" class="w-100" />
-            <div class="carousel-caption">
-              <h5>Title Slide 0</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
-                nemo?
-              </p>
+    <section class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="carousel-title">Onze projecten</h2>
+            <div>
+              <button
+                class="carousel-control-prev-custom"
+                type="button"
+                data-bs-target="#carouselTarget"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+
+              <button
+                class="carousel-control-next-custom"
+                type="button"
+                data-bs-target="#carouselTarget"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
             </div>
           </div>
-
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="./img/carousel-img-2.png" class="w-100" />
-            <div class="carousel-caption">
-              <h5>Title Slide 1</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
-                nemo?
-              </p>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="./img/carousel-img-3.png" class="w-100" />
-            <div class="carousel-caption">
-              <h5>Title Slide 2</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
-                nemo?
-              </p>
+          <div class="col-12">
+            <div
+              id="carouselTarget"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <img
+                        class="img-fluid"
+                        alt="Modern buildings with solar panels"
+                        src="./img/carousel-img-1.png"
+                      />
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <img
+                        class="img-fluid"
+                        alt="Modern buildings with solar panels"
+                        src="./img/carousel-img-2.png"
+                      />
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <img
+                        class="img-fluid"
+                        alt="Modern buildings with solar panels"
+                        src="./img/carousel-img-3.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <img
+                        class="img-fluid"
+                        alt="Modern buildings with solar panels"
+                        src="./img/carousel-img-2.png"
+                      />
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <img
+                        class="img-fluid"
+                        alt="Modern buildings with solar panels"
+                        src="./img/carousel-img-3.png"
+                      />
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <img
+                        class="img-fluid"
+                        alt="Modern buildings with solar panels"
+                        src="./img/carousel-img-1.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <img
+                        class="img-fluid"
+                        alt="Modern buildings with solar panels"
+                        src="./img/carousel-img-3.png"
+                      />
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <img
+                        class="img-fluid"
+                        alt="Modern buildings with solar panels"
+                        src="./img/carousel-img-1.png"
+                      />
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <img
+                        class="img-fluid"
+                        alt="Modern buildings with solar panels"
+                        src="./img/carousel-img-2.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+      <button class="btn carousel-btn mt-3">BEKIJK MEER PROJECTEN</button>
+    </section>
 
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselDemo"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselDemo"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon"></span>
-        </button>
-
-      <button class="btn btn-primary carousel-btn mt-3">
-        BEKIJK MEER PROJECTEN
-      </button>
-    </div>
-    
     <!-- Testimonials section -->
-    <section class="testimonial-section">
+    <section class="testimonial-section mt-5">
       <div class="container">
         <h2 class="testimonial-title">Wat klanten over ons zeggen</h2>
         <div class="row">
@@ -190,13 +247,18 @@
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card testimonial-card h-100">
               <div class="card-body">
-                <p class="card-text">Wij werken uitsluitend met de beste materialen en zorgen voor de echte service die hoort bij een systeem. Wij leveren enkel maatwerk en komen elke situatie, vooraf montage, bekijken en bespreken de mogelijkheden in een persoonlijk gesprek.</p>
+                <p class="card-text">
+                  Wij werken uitsluitend met de beste materialen en zorgen voor
+                  de echte service die hoort bij een systeem. Wij leveren enkel
+                  maatwerk en komen elke situatie, vooraf montage, bekijken en
+                  bespreken de mogelijkheden in een persoonlijk gesprek.
+                </p>
                 <div class="testimonial-stars">
-                  &#9733; &#9733; &#9733; &#9733; &#9734; <!-- 4 stars -->
+                  &#9733; &#9733; &#9733; &#9733; &#9734;
+                  <span style="color: #333">4.8</span>
+                  <!-- 4 stars -->
                 </div>
-                <div class="testimonial-author mt-2">
-                  Piet Janssen
-                </div>
+                <div class="testimonial-author mt-2">Piet Janssen</div>
               </div>
             </div>
           </div>
@@ -204,13 +266,17 @@
           <div class="col-lg-4 col-md-6 mt-2">
             <div class="card testimonial-card h-100">
               <div class="card-body">
-                <p class="card-text">De Nederlandse zon is prima geschikt om energie op te wekken, schijnt het hele jaar door, gaat voor niets op en levert 100% groene energie.</p>
+                <p class="card-text">
+                  De Nederlandse zon is prima geschikt om energie op te wekken,
+                  schijnt het hele jaar door, gaat voor niets op en levert 100%
+                  groene energie.
+                </p>
                 <div class="testimonial-stars">
-                  &#9733; &#9733; &#9733; &#9733; &#9733; <!-- 5 stars -->
+                  &#9733; &#9733; &#9733; &#9733; &#9733;
+                  <span style="color: #333">5.0</span>
+                  <!-- 5 stars -->
                 </div>
-                <div class="testimonial-author mt-2">
-                  Klaas Fritsen
-                </div>
+                <div class="testimonial-author mt-2">Klaas Fritsen</div>
               </div>
             </div>
           </div>
@@ -218,13 +284,18 @@
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card testimonial-card h-100">
               <div class="card-body">
-                <p class="card-text">Wij werken uitsluitend met de beste materialen en zorgen voor de echte service die hoort bij een systeem. Wij leveren enkel maatwerk en komen elke situatie, vooraf montage, bekijken en bespreken de mogelijkheden in een persoonlijk gesprek.</p>
+                <p class="card-text">
+                  Wij werken uitsluitend met de beste materialen en zorgen voor
+                  de echte service die hoort bij een systeem. Wij leveren enkel
+                  maatwerk en komen elke situatie, vooraf montage, bekijken en
+                  bespreken de mogelijkheden in een persoonlijk gesprek.
+                </p>
                 <div class="testimonial-stars">
-                  &#9733; &#9733; &#9733; &#9733; &#9734; <!-- 4 stars -->
+                  &#9733; &#9733; &#9733; &#9733; &#9733;
+                  <span style="color: #333">5.0</span>
+                  <!-- 4 stars -->
                 </div>
-                <div class="testimonial-author mt-2">
-                  Jan Test
-                </div>
+                <div class="testimonial-author mt-2">Jan Test</div>
               </div>
             </div>
           </div>
@@ -236,21 +307,21 @@
     <div class="container my-5">
       <footer class="bg-dark text-center text-lg-start footer">
         <!-- Grid container -->
-        <div class="container p-4 d-flex justify-content-center">
+        <div class="container p-4">
           <!--Grid row-->
           <div class="row mt-4">
             <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-left footer-div">
-              <div class="footer-logo-container">
+            <div class="col-lg-3 col-md-6 mb-md-0 footer-div">
+              <div class="footer-logo-container mb-1 mb-md-3">
                 <a href="#" class="footer-brand"
                   ><img
-                    class="footer-logo"
+                    class="img-fluid"
                     src="./img/invariaLogo.svg"
                     alt="Invaria Zonnepanelen Logo"
                     srcset=""
                 /></a>
               </div>
-              <ul class="list-unstyled mb-0 mt-4">
+              <ul class="list-unstyled">
                 <li>
                   <p>
                     InVaria levert en installeert zonnepanelen. Wij werken
@@ -263,37 +334,35 @@
             <!--Grid column-->
 
             <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-left footer-div">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 footer-div">
               <h5 class="text-uppercase">Navigatie</h5>
 
               <ul class="list-unstyled">
-                <li class="mb-4">
-                  <a href="#!" class=""
-                    ><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i
-                    >Home</a
+                <li class="mb-1 mb-md-4">
+                  <a href="#!" class="text-decoration-none"
+                    ><i class="fas fa-home fa-fw fa-sm me-2"></i>Home</a
                   >
                 </li>
-                <li class="mb-4">
-                  <a href="#!" class=""
-                    ><i class="fas fa-backspace fa-fw fa-sm me-2"></i>Over
-                    ons</a
+                <li class="mb-1 mb-md-4">
+                  <a href="#!" class="text-decoration-none"
+                    ><i class="fas fa-info fa-fw fa-sm me-2"></i>Over ons</a
                   >
                 </li>
-                <li class="mb-4">
-                  <a href="#!" class=""
-                    ><i class="far fa-file-alt fa-fw fa-sm me-2"></i
+                <li class="mb-1 mb-md-4">
+                  <a href="#!" class="text-decoration-none"
+                    ><i class="fas fa-solar-panel fa-fw fa-sm me-2"></i
                     >Zonnepanelen</a
                   >
                 </li>
-                <li class="mb-4">
-                  <a href="#!" class=""
-                    ><i class="far fa-file-alt fa-fw fa-sm me-2"></i
+                <li class="mb-1 mb-md-4">
+                  <a href="#!" class="text-decoration-none"
+                    ><i class="fas fa-project-diagram fa-fw fa-sm me-2"></i
                     >Projecten</a
                   >
                 </li>
-                <li class="mb-4">
-                  <a href="#!" class=""
-                    ><i class="far fa-file-alt fa-fw fa-sm me-2"></i>Contact</a
+                <li class="mb-1 mb-md-4">
+                  <a href="#!" class="text-decoration-none"
+                    ><i class="fas fa-envelope fa-fw fa-sm me-2"></i>Contact</a
                   >
                 </li>
               </ul>
@@ -301,33 +370,40 @@
             <!--Grid column-->
 
             <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-left footer-div">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 footer-div">
               <h5 class="text-uppercase">Contact us</h5>
 
               <ul class="list-unstyled text-left">
-                <li class="mb-4">
-                  <a href="#!" class="mb-3">E-mail: info@invaria.nl</a>
+                <li class="mb-1 mb-md-4">
+                  <a href="#" class="text-decoration-none"
+                    ><i class="fas fa-envelope fa-fw fa-sm me-2"></i>E-mail:
+                    info@invaria.nl</a
+                  >
                 </li>
-                <li class="mb-4">
-                  <a href="#!" class="mb-3">Telefoon: 06 - 19 99 93 56</a>
+                <li class="mb-1 mb-md-4">
+                  <a href="#" class="text-decoration-none"
+                    ><i class="fas fa-phone fa-fw fa-sm me-2"></i>Telefoon: 06 -
+                    19 99 93 56</a
+                  >
                 </li>
               </ul>
             </div>
             <!--Grid column-->
 
             <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-left footer-div">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 footer-div">
               <h5 class="text-uppercase">Volg ons</h5>
 
               <ul class="list-unstyled">
-                <li class="mb-4">
-                  <a href="#!" class="mb-3"
-                    ><i class="fas fa-at fa-fw fa-sm me-2"></i>Facebook</a
+                <li class="mb-1 mb-md-4">
+                  <a href="#" class="text-decoration-none"
+                    ><i class="fab fa-facebook-f fa-fw fa-sm me-2"></i
+                    >Facebook</a
                   >
                 </li>
-                <li class="mb-4">
-                  <a href="#!" class="mb-3"
-                    ><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i
+                <li class="mb-1 mb-md-4">
+                  <a href="#" class="text-decoration-none"
+                    ><i class="fab fa-instagram fa-fw fa-sm me-2"></i
                     >Instagram</a
                   >
                 </li>
@@ -344,7 +420,7 @@
           class="text-center p-3"
           style="background-color: rgba(0, 0, 0, 0.2)"
         >
-          <p>
+          <p class="mb-0">
             © 2024 Invaria Zonnepanelen <br />
             Algemene voorwaarden | Privacyverklaring
           </p>
@@ -359,5 +435,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="navbar.js"></script>
   </body>
 </html>
