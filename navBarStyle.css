@@ -1,5 +1,7 @@
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Nav bar */
@@ -29,7 +31,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 10px;
+  margin: 0 12px;
+  position: relative;
 }
 
 .nav-item-custom .nav-link {
@@ -41,12 +44,17 @@ body {
 
 .nav-item-custom .nav-link.active {
   color: #ff6600;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px solid #ff6600;
 }
 
 .nav-item-custom .nav-link:hover {
   color: #ff6600;
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.nav-item-custom:hover {
+  border-bottom: 1px solid #ff6600;
 }
 
 .nav-item-custom .nav-link:hover ~ .nav-item-custom .nav-link.active {
@@ -57,7 +65,7 @@ body {
 .orange-button-navbar .nav-link {
   background-color: #ff6600;
   border-radius: 40px;
-  padding: 12px 20px;
+  padding: 12px 30px !important;
   color: #fff;
   text-decoration: none;
   display: inline-block;

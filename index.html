@@ -123,12 +123,14 @@
     </section>
 
     <!-- Carousel section -->
-    <section class="pt-5 pb-5">
+    <section class="pt-5 pb-5 carousel-section">
       <div class="container">
         <div class="row">
-          <div class="d-flex justify-content-between align-items-center mb-3">
+          <div
+            class="d-flex justify-content-between align-items-center mb-3 header-wrapper"
+          >
             <h2 class="carousel-title">Onze projecten</h2>
-            <div>
+            <div class="carousel-buttons-div">
               <button
                 class="carousel-control-prev-custom"
                 type="button"
@@ -148,7 +150,7 @@
               </button>
             </div>
           </div>
-          <div class="col-12">
+          <div class="col-12 carousel-img-div">
             <div
               id="carouselTarget"
               class="carousel slide"
@@ -255,7 +257,7 @@
                 </p>
                 <div class="testimonial-stars">
                   &#9733; &#9733; &#9733; &#9733; &#9734;
-                  <span style="color: #333">4.8</span>
+                  <span style="color: #3b485c">4.8</span>
                   <!-- 4 stars -->
                 </div>
                 <div class="testimonial-author mt-2">Piet Janssen</div>
@@ -273,7 +275,7 @@
                 </p>
                 <div class="testimonial-stars">
                   &#9733; &#9733; &#9733; &#9733; &#9733;
-                  <span style="color: #333">5.0</span>
+                  <span style="color: #3b485c">5.0</span>
                   <!-- 5 stars -->
                 </div>
                 <div class="testimonial-author mt-2">Klaas Fritsen</div>
@@ -292,7 +294,7 @@
                 </p>
                 <div class="testimonial-stars">
                   &#9733; &#9733; &#9733; &#9733; &#9733;
-                  <span style="color: #333">5.0</span>
+                  <span style="color: #3b485c">5.0</span>
                   <!-- 4 stars -->
                 </div>
                 <div class="testimonial-author mt-2">Jan Test</div>
@@ -304,14 +306,14 @@
     </section>
 
     <!-- Footer -->
-    <div class="container my-5">
+    <div class="container-fluid my-5">
       <footer class="bg-dark text-center text-lg-start footer">
         <!-- Grid container -->
         <div class="container p-4">
           <!--Grid row-->
           <div class="row mt-4">
             <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-md-0 footer-div">
+            <div class="col-lg-4 col-md-6 mb-md-0 footer-div">
               <div class="footer-logo-container mb-1 mb-md-3">
                 <a href="#" class="footer-brand"
                   ><img
@@ -328,6 +330,12 @@
                     uitsluitend met de beste materialen en zorgen voor de echte
                     service die hoort bij een systeem.
                   </p>
+                </li>
+                <li>
+                  <p class="mb-3">© 2024 Invaria Zonnepanelen</p>
+                </li>
+                <li>
+                  <p class="mb-3">Algemene voorwaarden | Privacyverklaring</p>
                 </li>
               </ul>
             </div>
@@ -391,7 +399,7 @@
             <!--Grid column-->
 
             <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 footer-div">
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0 footer-div">
               <h5 class="text-uppercase">Volg ons</h5>
 
               <ul class="list-unstyled">
@@ -416,15 +424,7 @@
         <!-- Grid container -->
 
         <!-- Copyright -->
-        <div
-          class="text-center p-3"
-          style="background-color: rgba(0, 0, 0, 0.2)"
-        >
-          <p class="mb-0">
-            © 2024 Invaria Zonnepanelen <br />
-            Algemene voorwaarden | Privacyverklaring
-          </p>
-        </div>
+
         <!-- Copyright -->
       </footer>
     </div>

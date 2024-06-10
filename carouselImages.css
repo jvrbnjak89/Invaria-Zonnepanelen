@@ -1,3 +1,7 @@
+.carousel-section {
+  padding-top: 120px !important;
+}
+
 .carousel-title {
   text-align: left;
   font-size: 40px;
@@ -5,9 +9,26 @@
   font-weight: 500;
 }
 
+.carousel-img-div {
+  margin-top: 80px;
+}
+
+.header-wrapper {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.carousel-buttons-div {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
 .carousel-btn {
   display: block;
   margin: 30px auto 0 auto;
+  padding: 12px 30px !important;
   background-color: #ff6600;
   border: 1px solid transparent;
   border-radius: 40px;
@@ -16,7 +37,6 @@
   color: #fff;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  font-weight: 600;
   line-height: 1.25;
   min-height: 3rem;
   position: relative;
@@ -39,32 +59,52 @@
 
 .carousel-control-prev-custom,
 .carousel-control-next-custom {
-  width: 15%;
-  padding: 0;
+  width: 60px;
+  height: 60px;
   text-align: center;
-  border: 0;
-  background: 0 0;
-  transition: opacity 0.15s ease;
+  border: 2px solid #141414;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.15s ease, background-color 0.15s ease,
+    border-color 0.15s ease;
 }
 
-.carousel-control-prev-custom::before,
-.carousel-control-next-custom::before {
-  content: "";
+.carousel-control-prev-custom:hover,
+.carousel-control-next-custom:hover {
+  background-color: #e0e0e0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 15px;
+  height: 15px;
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  border: solid #f36c21;
-  border-width: 0 3px 3px 0;
+  position: relative;
 }
 
-.carousel-control-prev-custom::before {
-  transform: rotate(135deg);
-  margin-right: 5px;
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: solid #141414;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.carousel-control-next-custom::before {
-  transform: rotate(-45deg);
-  margin-left: 5px;
+.carousel-control-prev-custom .carousel-control-prev-icon::before {
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.carousel-control-next-custom .carousel-control-next-icon::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .carousel-item img {
