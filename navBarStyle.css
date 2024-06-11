@@ -2,6 +2,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  height: 100vh;
 }
 
 /* Nav bar */
@@ -10,6 +11,7 @@ body {
   font-size: 15px;
   color: #333333;
   padding: 0;
+  background-color: #fff;
 }
 
 .logo-nav {
@@ -17,8 +19,8 @@ body {
 }
 
 .container-fluid {
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 6% !important;
+  padding-right: 6% !important;
 }
 
 .navbar-nav {

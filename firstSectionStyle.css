@@ -1,3 +1,11 @@
+.first-section {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+}
+
 .bg-image {
   background-image: url("img/first-img.png");
   background-size: cover;

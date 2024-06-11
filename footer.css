@@ -43,7 +43,8 @@ footer .row {
   color: #c1c1c1;
 }
 
-.footer .col-lg-3 {
+.footer .col-lg-3,
+.footer .col-lg-2 {
   padding: 20px;
 }
 
