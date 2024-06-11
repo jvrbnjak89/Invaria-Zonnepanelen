@@ -1,11 +1,13 @@
 .section-two-text-container h2 {
-  font-size: 40px;
+  font-size: 2.5rem; /* 40px */
   color: #000000;
 }
+
 .section-two-text-container p {
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px */
   color: #000000;
 }
+
 .button-section-2 {
   display: block;
   margin: 0;
@@ -13,14 +15,14 @@
   align-self: flex-start;
   background-color: #ff6600;
   border: 1px solid transparent;
-  border-radius: 40px;
-  margin-top: 20px;
-  padding: 12px 30px !important;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  border-radius: 2.5rem; /* 40px */
+  margin-top: 1.25rem; /* 20px */
+  padding: 0.75rem 1.875rem !important; /* 12px 30px */
+  box-shadow: rgba(0, 0, 0, 0.02) 0 0.0625rem 0.1875rem 0; /* 0 1px 3px */
   box-sizing: border-box;
   color: #fff;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 1rem; /* 16px */
   justify-content: center;
   line-height: 1.25;
   min-height: 3rem;
@@ -48,6 +50,7 @@
   padding: 0;
   overflow: hidden;
 }
+
 .image-container img {
   width: 100%;
   height: 100%;
@@ -55,7 +58,7 @@
 }
 
 .panels-img {
-  border-radius: 40px;
+  border-radius: 2.5rem; /* 40px */
   background-size: 100% 100%; /* could be "cover" value of property too */
   background-position: center;
   background-repeat: no-repeat;

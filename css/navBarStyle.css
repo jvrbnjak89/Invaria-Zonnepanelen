@@ -1,0 +1,103 @@
+:root {
+  --color-primary: #ff6600;
+  --color-secondary: #333333;
+  --color-tertiary: #ffffff;
+  --color-hover: #cc5200;
+  --color-active: #ff6600;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+/* Nav bar */
+
+.navbar {
+  font-size: 0.9375rem; /* 15px */
+  color: var(--color-secondary);
+  padding: 0;
+  background-color: var(--color-tertiary);
+}
+
+.logo-nav {
+  max-width: 15.625rem; /* 250px */
+}
+
+.container-fluid {
+  padding-left: 6% !important;
+  padding-right: 6% !important;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 12px;
+  position: relative;
+}
+
+.nav-item-custom .nav-link {
+  font-weight: 500;
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.nav-item-custom .nav-link:hover,
+.nav-item-custom .nav-link:focus {
+  color: var(--color-primary);
+}
+
+.nav-item-custom .nav-link:hover ~ .nav-item-custom .nav-link.active {
+  color: var(--color-secondary);
+  text-decoration: none;
+  border-bottom: none;
+}
+.nav-item-custom .nav-link.active ~ .nav-item-custom .nav-link:hover {
+  color: var(--color-secondary);
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.nav-item-custom .nav-link.active {
+  color: var(--color-primary);
+}
+
+.nav-item-custom:hover:not(.active) {
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.nav-item-custom .nav-link.active:not(:hover):not(:focus) {
+  color: var(--color-secondary);
+  border-bottom: none;
+}
+
+.orange-button-navbar .nav-link {
+  background-color: var(--color-primary);
+  border-radius: 2.5rem; /* 40px */
+  padding: 12px 30px !important;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.orange-button-navbar .nav-link:hover,
+.orange-button-navbar .nav-link:focus {
+  background-color: var(--color-hover);
+  color: #e6e6e6;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+}
