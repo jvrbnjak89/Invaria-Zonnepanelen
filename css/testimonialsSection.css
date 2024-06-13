@@ -7,7 +7,7 @@
   text-align: left;
   color: #333;
   margin-bottom: 2.5rem; /* 40px */
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .testimonial-card {
@@ -17,13 +17,6 @@
 
 .testimonial-stars {
   color: #f6d774;
-}
-
-@media (min-width: 48rem) {
-  /* 768px */
-  .testimonial-title {
-    font-size: 2.5rem;
-  }
 }
 
 .testimonial-card {
@@ -36,33 +29,46 @@
 
 .testimonial-card p {
   color: #888;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
-@media (min-width: 48rem) {
-  /* 768px */
-  .testimonial-card p {
-    font-size: 1.1rem;
-  }
+.card-text {
+  font-size: 1.25rem; /* 20px */
 }
 
 .testimonial-stars {
   color: #ffd700;
+  font-size: 1.25rem;
 }
 
 .testimonial-author {
   color: #888;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 1.25rem;
 }
 
-@media (min-width: 48rem) {
-  /* 768px */
+@media (max-width: 768px) {
+  .testimonial-section {
+    padding: 2.5rem 0.9375rem; /* 40px 15px */
+  }
+
+  .testimonial-title {
+    text-align: center;
+    margin-bottom: 1.875rem; /* 30px */
+    font-size: 2rem;
+  }
+
+  .testimonial-card p {
+    font-size: 1rem;
+  }
+  .testimonial-stars {
+    font-size: 1rem;
+  }
   .testimonial-author {
     font-size: 1rem;
   }
-}
 
-.card-text {
-  font-size: 1.25rem; /* 20px */
+  .testimonial-card {
+    margin-bottom: 0.3rem;
+  }
 }

@@ -46,20 +46,77 @@
   background-color: #cc5200;
 }
 
+.section-two .row {
+  display: flex;
+  align-items: center;
+}
+
 .image-container {
   padding: 0;
   overflow: hidden;
-}
-
-.image-container img {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
-  object-fit: cover;
 }
 
 .panels-img {
+  width: 870px;
+  height: 668px;
   border-radius: 2.5rem; /* 40px */
-  background-size: 100% 100%; /* could be "cover" value of property too */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/* Media Queries for Different Screen Sizes */
+@media (max-width: 768px) {
+  .section-two .row {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .section-two-text-container h2 {
+    font-size: 2rem; /* 32px */
+  }
+
+  .section-two-text-container p {
+    font-size: 1rem; /* 16px */
+  }
+
+  .button-section-2 {
+    padding: 0.625rem 1.25rem !important; /* 10px 20px */
+    font-size: 0.875rem; /* 14px */
+    border-radius: 1.25rem; /* 20px */
+  }
+
+  .panels-img {
+    width: 40.625rem; /* 650px */
+    height: 31.25rem; /* 500px */
+  }
+}
+
+@media (max-width: 576px) {
+  .section-two .row {
+    padding: 0.625rem; /* 10px */
+  }
+
+  .section-two-text-container h2 {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  .section-two-text-container p {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  .button-section-2 {
+    padding: 0.5rem 1rem !important; /* 8px 16px */
+    font-size: 0.75rem; /* 12px */
+    border-radius: 1rem; /* 16px */
+  }
+
+  .panels-img {
+    width: 30.625rem; /* 490px */
+    height: 23.75rem; /* 380px */
+  }
 }
