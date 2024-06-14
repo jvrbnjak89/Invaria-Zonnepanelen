@@ -11,6 +11,8 @@
 }
 
 .testimonial-card {
+  max-width: 639px;
+  width: 100%;
   border-radius: 1.25rem; /* 20px */
   border: 1px solid #ebe9e8;
   background-color: #ffffff;
