@@ -22,7 +22,7 @@
   font-weight: 500;
 }
 
-.header-wrapper {
+.carousel-header-buttons-container {
   padding-left: 8%;
   padding-right: 8%;
   margin-bottom: 100px;
@@ -121,7 +121,7 @@
   gap: 60px;
 }
 
-/* ============== BUTTON ORANGE BOTTOM =================================================================== */
+/* ============== BUTTON CAROUSEL BOTTOM =================================================================== */
 
 .carousel-btn {
   display: block;
@@ -138,7 +138,6 @@
   line-height: 1.25;
   min-height: 3rem;
   position: relative;
-  text-decoration: none;
   transition: all 250ms;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -166,24 +165,21 @@
     font-size: 2rem; /* 32px */
   }
 
-  .carousel-img-div {
-    margin-top: 3rem; /* 48px */
-  }
-
   .carousel-control-prev-custom,
   .carousel-control-next-custom {
     width: 3rem; /* 48px */
     height: 3rem; /* 48px */
   }
 
-  .carousel-item img {
-    height: 25rem; /* 400px */
-    border-radius: 1.25rem; /* 20px */
-    margin-bottom: 1.5rem; /* 24px */
-  }
-
   .gallery-cell {
-    margin-right: 20px; /* Manji razmak između slika na mobilnim uređajima */
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 100%;
+  }
+  .gallery-cell img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
   }
 }
 
@@ -192,20 +188,5 @@
   .carousel-control-next-custom {
     width: 2.5rem; /* 40px */
     height: 2.5rem; /* 40px */
-  }
-
-  .carousel-item .row {
-    display: flex;
-    justify-content: center;
-  }
-
-  .carousel-item .col-md-12 {
-    max-width: 100%;
-  }
-
-  .carousel-item img {
-    height: 20rem; /* 320px */
-    border-radius: 1rem; /* 16px */
-    margin-bottom: 1rem; /* 16px */
   }
 }

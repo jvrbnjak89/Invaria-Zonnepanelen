@@ -70,18 +70,26 @@
 }
 
 /* Media Queries for Different Screen Sizes */
-@media (max-width: 768px) {
+@media (max-width: 990px) {
+  .section-two {
+    padding: 0;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
   .section-two .row {
-    padding: 0 !important;
-    margin: 0 !important;
+    padding: 0.625rem; /* 10px */
+    margin: 0;
   }
 
   .section-two-text-container h2 {
-    font-size: 2rem; /* 32px */
+    font-size: 2rem;
   }
 
   .section-two-text-container p {
-    font-size: 1rem; /* 16px */
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
   }
 
   .button-section-2 {
@@ -93,6 +101,12 @@
   .panels-img {
     width: 40.625rem; /* 650px */
     height: 31.25rem; /* 500px */
+  }
+}
+
+@media (max-width: 768px) {
+  .section-two {
+    margin-bottom: 3rem; /* Dodajte željeni razmak između sekcija */
   }
 }
 
