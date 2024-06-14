@@ -187,15 +187,28 @@
       </div>
     </section>
 
-    <!-- Testimonials section -->
+    <!-- Testimonial section -->
     <section class="testimonial-section mt-5">
       <div class="container">
         <h2 class="testimonial-title">Wat klanten over ons zeggen</h2>
         <div class="row">
-          <!-- Testimonial 1 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card testimonial-card h-100">
-              <div class="card-body">
+          <div
+            class="d-flex justify-content-between align-items-center mb-3 header-wrapper"
+          ></div>
+          <div
+            class="gallery js-flickity"
+            data-flickity-options='{
+              "freeScroll": true,
+              "wrapAround": true,
+              "contain": true,
+              "pageDots": false,
+              "prevNextButtons": false,
+              "draggable": true,
+              "cellAlign": "left"
+            }'
+          >
+            <div class="gallery-cell col-12 col-md-8 col-lg-6">
+              <div class="card testimonial-card h-100">
                 <p class="card-text">
                   Wij werken uitsluitend met de beste materialen en zorgen voor
                   de echte service die hoort bij een systeem. Wij leveren enkel
@@ -205,16 +218,12 @@
                 <div class="testimonial-stars">
                   &#9733; &#9733; &#9733; &#9733; &#9734;
                   <span style="color: #3b485c">4.8</span>
-                  <!-- 4 stars -->
                 </div>
                 <div class="testimonial-author mt-2">Piet Janssen</div>
               </div>
             </div>
-          </div>
-          <!-- Testimonial 2 -->
-          <div class="col-lg-4 col-md-6 mt-2">
-            <div class="card testimonial-card h-100">
-              <div class="card-body">
+            <div class="gallery-cell col-12 col-md-8 col-lg-6">
+              <div class="card testimonial-card h-100">
                 <p class="card-text">
                   De Nederlandse zon is prima geschikt om energie op te wekken,
                   schijnt het hele jaar door, gaat voor niets op en levert 100%
@@ -223,16 +232,12 @@
                 <div class="testimonial-stars">
                   &#9733; &#9733; &#9733; &#9733; &#9733;
                   <span style="color: #3b485c">5.0</span>
-                  <!-- 5 stars -->
                 </div>
                 <div class="testimonial-author mt-2">Klaas Fritsen</div>
               </div>
             </div>
-          </div>
-          <!-- Testimonial 3 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card testimonial-card h-100">
-              <div class="card-body">
+            <div class="gallery-cell col-12 col-md-8 col-lg-6">
+              <div class="card testimonial-card h-100">
                 <p class="card-text">
                   Wij werken uitsluitend met de beste materialen en zorgen voor
                   de echte service die hoort bij een systeem. Wij leveren enkel
@@ -242,7 +247,6 @@
                 <div class="testimonial-stars">
                   &#9733; &#9733; &#9733; &#9733; &#9733;
                   <span style="color: #3b485c">5.0</span>
-                  <!-- 4 stars -->
                 </div>
                 <div class="testimonial-author mt-2">Jan Test</div>
               </div>
