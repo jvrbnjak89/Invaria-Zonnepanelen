@@ -30,21 +30,31 @@
 .testimonial-card p {
   color: #888;
   font-size: 1.25rem;
+  margin-bottom: 1.0625rem; /* 17px */
 }
 
 .card-text {
   font-size: 1.25rem; /* 20px */
+  margin-bottom: 1.0625rem; /* 17px */
 }
 
 .testimonial-stars {
   color: #ffd700;
   font-size: 1.25rem;
+  margin-bottom: 1.0625rem; /* 17px */
 }
 
 .testimonial-author {
   color: #888;
   font-weight: 600;
   font-size: 1.25rem;
+}
+
+.card-body {
+  border-radius: 1.25rem; /* 20px */
+  border: 1px solid #ebe9e8;
+  background-color: #ffffff;
+  padding: 1.875rem; /* 30px */
 }
 
 @media (max-width: 768px) {

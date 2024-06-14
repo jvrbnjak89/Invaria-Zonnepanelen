@@ -6,6 +6,10 @@
     <title>INVARIA ZONNEPANELEN</title>
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link
@@ -87,7 +91,7 @@
           class="col-md-5 mr-3 p-5 d-sm-flex align-items-center justify-content-between"
         >
           <div class="section-two-text-container d-flex flex-column">
-            <h2>Wlkom Bij InVaria</h2>
+            <h2>Welkom Bij InVaria</h2>
             <p>
               De Nederlandse zon is prima geschikt om energie op te wekken,
               schijnt het hele jaar door, gaat voor niets op en levert 100%
@@ -122,126 +126,65 @@
       <div class="container-fluid">
         <div class="row">
           <div
-            class="d-flex justify-content-between align-items-center mb-3 header-wrapper"
+            class="d-flex justify-content-between align-items-center header-wrapper"
           >
             <h2 class="carousel-title">Onze projecten</h2>
             <div class="carousel-buttons-div">
               <button
-                class="carousel-control-prev-custom"
+                class="carousel-control-prev-custom previous"
                 type="button"
-                data-bs-target="#carouselTarget"
-                data-bs-slide="prev"
               >
                 <span class="carousel-control-prev-icon"></span>
               </button>
 
-              <button
-                class="carousel-control-next-custom"
-                type="button"
-                data-bs-target="#carouselTarget"
-                data-bs-slide="next"
-              >
+              <button class="carousel-control-next-custom next" type="button">
                 <span class="carousel-control-next-icon"></span>
               </button>
             </div>
           </div>
-          <div class="col-12 carousel-img-div">
-            <div
-              id="carouselTarget"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row">
-                    <div class="col-md-4 mb-3">
-                      <img
-                        class="img-fluid"
-                        alt="Modern buildings with solar panels"
-                        src="img/carousel-img-1.webp"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <img
-                        class="img-fluid"
-                        alt="Modern buildings with solar panels"
-                        src="img/carousel-img-2.webp"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <img
-                        class="img-fluid"
-                        alt="Modern buildings with solar panels"
-                        src="img/carousel-img-3.webp"
-                        loading="lazy"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-md-4 mb-3">
-                      <img
-                        class="img-fluid"
-                        alt="Modern buildings with solar panels"
-                        src="img/carousel-img-2.webp"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <img
-                        class="img-fluid"
-                        alt="Modern buildings with solar panels"
-                        src="img/carousel-img-3.webp"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <img
-                        class="img-fluid"
-                        alt="Modern buildings with solar panels"
-                        src="img/carousel-img-1.webp"
-                        loading="lazy"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-md-4 mb-3">
-                      <img
-                        class="img-fluid"
-                        alt="Modern buildings with solar panels"
-                        src="img/carousel-img-3.webp"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <img
-                        class="img-fluid"
-                        alt="Modern buildings with solar panels"
-                        src="img/carousel-img-1.webp"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <img
-                        class="img-fluid"
-                        alt="Modern buildings with solar panels"
-                        src="img/carousel-img-2.webp"
-                        loading="lazy"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div
+            class="gallery js-flickity"
+            data-flickity-options='{ "freeScroll": true, "wrapAround": true }'
+          >
+            <div class="gallery-cell">
+              <img
+                src="./img/carousel-img-1.webp"
+                alt="Modern buildings with solar panels"
+                loading="lazy"
+              />
+            </div>
+            <div class="gallery-cell">
+              <img
+                src="./img/carousel-img-2.webp"
+                alt="Modern buildings with solar panels"
+                loading="lazy"
+              />
+            </div>
+            <div class="gallery-cell">
+              <img
+                src="./img/carousel-img-3.webp"
+                alt="Modern buildings with solar panels"
+                loading="lazy"
+              />
+            </div>
+            <div class="gallery-cell">
+              <img
+                src="./img/carousel-img-1.webp"
+                alt="Modern buildings with solar panels"
+                loading="lazy"
+              />
+            </div>
+            <div class="gallery-cell">
+              <img
+                src="./img/carousel-img-2.webp"
+                alt="Modern buildings with solar panels"
+                loading="lazy"
+              />
             </div>
           </div>
+          <button class="btn carousel-btn">BEKIJK MEER PROJECTEN</button>
         </div>
       </div>
-      <button class="btn carousel-btn mt-3">BEKIJK MEER PROJECTEN</button>
     </section>
 
     <!-- Testimonials section -->
@@ -347,35 +290,23 @@
 
             <!--Grid column-->
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0 footer-div">
-              <h5 class="text-uppercase">Navigatie</h5>
+              <h5 class="text">Navigatie</h5>
 
               <ul class="list-unstyled">
                 <li class="mb-1 mb-md-4">
-                  <a href="#!" class="text-decoration-none"
-                    ><i class="fas fa-home fa-fw fa-sm me-2"></i>Home</a
-                  >
+                  <a href="#!" class="text-decoration-none">Home</a>
                 </li>
                 <li class="mb-1 mb-md-4">
-                  <a href="#!" class="text-decoration-none"
-                    ><i class="fas fa-info fa-fw fa-sm me-2"></i>Over ons</a
-                  >
+                  <a href="#!" class="text-decoration-none">Over ons</a>
                 </li>
                 <li class="mb-1 mb-md-4">
-                  <a href="#!" class="text-decoration-none"
-                    ><i class="fas fa-solar-panel fa-fw fa-sm me-2"></i
-                    >Zonnepanelen</a
-                  >
+                  <a href="#!" class="text-decoration-none">Zonnepanelen</a>
                 </li>
                 <li class="mb-1 mb-md-4">
-                  <a href="#!" class="text-decoration-none"
-                    ><i class="fas fa-project-diagram fa-fw fa-sm me-2"></i
-                    >Projecten</a
-                  >
+                  <a href="#!" class="text-decoration-none">Projecten</a>
                 </li>
                 <li class="mb-1 mb-md-4">
-                  <a href="#!" class="text-decoration-none"
-                    ><i class="fas fa-envelope fa-fw fa-sm me-2"></i>Contact</a
-                  >
+                  <a href="#!" class="text-decoration-none">Contact</a>
                 </li>
               </ul>
             </div>
@@ -383,19 +314,17 @@
 
             <!--Grid column-->
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0 footer-div">
-              <h5 class="text-uppercase">Contact us</h5>
+              <h5 class="text">Contact us</h5>
 
               <ul class="list-unstyled text-left">
                 <li class="mb-1 mb-md-4">
                   <a href="#" class="text-decoration-none"
-                    ><i class="fas fa-envelope fa-fw fa-sm me-2"></i>E-mail:
-                    info@invaria.nl</a
+                    >E-mail: info@invaria.nl</a
                   >
                 </li>
                 <li class="mb-1 mb-md-4">
                   <a href="#" class="text-decoration-none"
-                    ><i class="fas fa-phone fa-fw fa-sm me-2"></i>Telefoon: 06 -
-                    19 99 93 56</a
+                    >Telefoon: 06 - 19 99 93 56</a
                   >
                 </li>
               </ul>
@@ -404,20 +333,14 @@
 
             <!--Grid column-->
             <div class="col-lg-2 col-md-6 mb-4 mb-md-0 footer-div">
-              <h5 class="text-uppercase">Volg ons</h5>
+              <h5 class="text">Volg ons</h5>
 
               <ul class="list-unstyled">
                 <li class="mb-1 mb-md-4">
-                  <a href="#" class="text-decoration-none"
-                    ><i class="fab fa-facebook-f fa-fw fa-sm me-2"></i
-                    >Facebook</a
-                  >
+                  <a href="#" class="text-decoration-none">Facebook</a>
                 </li>
                 <li class="mb-1 mb-md-4">
-                  <a href="#" class="text-decoration-none"
-                    ><i class="fab fa-instagram fa-fw fa-sm me-2"></i
-                    >Instagram</a
-                  >
+                  <a href="#" class="text-decoration-none">Instagram</a>
                 </li>
               </ul>
             </div>
@@ -426,19 +349,17 @@
           <!--Grid row-->
         </div>
         <!-- Grid container -->
-
-        <!-- Copyright -->
-
-        <!-- Copyright -->
       </footer>
     </div>
     <!-- End of .container -->
-
+    <!-- Flickity JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/navbar.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/navbar.js"></script>
   </body>
 </html>

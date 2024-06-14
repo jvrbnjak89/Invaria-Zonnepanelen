@@ -11,7 +11,7 @@
 
 footer.footer {
   width: 100%;
-  padding: 0;
+  padding: 0 80px;
   margin: 0;
 }
 
@@ -58,7 +58,7 @@ footer .row {
 .footer-div {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 1.25rem; /* 20px */
 }
 .footer-div:not(:first-child) {
@@ -71,6 +71,10 @@ footer .row {
 }
 
 @media (max-width: 768px) {
+  footer.footer {
+    padding: 0 60px;
+  }
+
   .footer-div {
     gap: 0.625rem; /* 10px */
   }
