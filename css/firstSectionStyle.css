@@ -1,12 +1,21 @@
+.first-section {
+  padding: 0 30px;
+  margin: 0;
+}
+
+.first-section .container-fluid {
+  padding: 12% 5%;
+}
+
 .bg-image {
-  background-image: url("img/first-img.png");
+  background-image: url("../img/first-img.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 12% 5%;
+  height: 40.625rem; /* 650px */
   color: white;
   position: relative;
-  border-radius: 40px;
+  border-radius: 2.5rem; /* 40px */
   text-align: left;
 }
 
@@ -18,7 +27,7 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 40px;
+  border-radius: 2.5rem; /* 40px */
   z-index: 1;
 }
 
@@ -29,7 +38,7 @@
 }
 
 h1 {
-  font-size: 4.375em;
+  font-size: 4.375rem; /* 70px */
   font-weight: 600;
   line-height: 1.2;
 }
@@ -39,7 +48,7 @@ h1 span {
 }
 
 .headings-container h2 {
-  font-size: 2.5em;
+  font-size: 2.5rem; /* 40px */
   margin-bottom: 1rem;
   line-height: 1.2;
 }
@@ -50,11 +59,11 @@ h1 span {
   }
 
   h1 {
-    font-size: 3.5em;
+    font-size: 3.5rem; /* 56px */
   }
 
   .headings-container h2 {
-    font-size: 2em;
+    font-size: 2rem; /* 32px */
   }
 }
 
@@ -64,11 +73,11 @@ h1 span {
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 3rem; /* 48px */
   }
 
   .headings-container h2 {
-    font-size: 1.75em;
+    font-size: 1.75rem; /* 28px */
   }
 }
 
@@ -78,30 +87,32 @@ h1 span {
   }
 
   h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem; /* 40px */
   }
 
   .headings-container h2 {
-    font-size: 1.5em;
+    font-size: 1.5rem; /* 24px */
   }
 
   .bg-image {
     padding: 10% 3%;
-    border-radius: 20px;
+    border-radius: 1.25rem; /* 20px */
+    height: 28.125rem; /* 450px */
   }
 }
 
 @media (max-width: 576px) {
   h1 {
-    font-size: 2em;
+    font-size: 2rem; /* 32px */
   }
 
   .headings-container h2 {
-    font-size: 1.25em;
+    font-size: 1.25rem; /* 20px */
   }
 
   .bg-image {
     padding: 8% 2%;
-    border-radius: 15px;
+    border-radius: 0.9375rem; /* 15px */
+    height: 21.875rem; /* 350px */
   }
 }
